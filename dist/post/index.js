@@ -80057,7 +80057,7 @@ const util_execBashCommand = async (command, platform = process.platform) => {
 
 const CACHE_HIT = "cache-hit";
 const DOCKER_IMAGES_LIST = "docker-images-list";
-const DOCKER_IMAGES_PATH = "~/.docker-images.tar";
+const DOCKER_IMAGES_PATH = "~/.docker-images.tar.gz";
 const LIST_COMMAND = "docker image list --format '" +
     '{{ if ne .Repository "<none>" }}{{ .Repository }}' +
     `{{ if ne .Tag "<none>" }}:{{ .Tag }}{{ end }}{{ else }}{{ .ID }}{{ end }}'`;
